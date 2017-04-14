@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".Activitites.LocationChooser">
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="@android:color/white"
+        android:padding="16dp"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/leftarrow"
+            android:id="@+id/left_arrow"
+            android:layout_alignParentLeft="true"
+            />
+
+        <com.moyo.carzrideon.Views.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:gravity="center"
+            android:id="@+id/title"
+            android:layout_marginRight="50dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/toolBarTextColor"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/linearLayout"
+        android:background="@color/edittext_location_color"
+        android:paddingBottom="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/topLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:visibility="gone"
+                android:layout_margin="16dp"
+                android:background="@drawable/black_border_white"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="4"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/driverName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:singleLine="true"
+                        android:text="Name"
+                        android:textSize="15dp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/driverAge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:text="Age"
+                        android:textSize="15dp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/driverGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="3dp"
+                        android:text="Gender"
+                        android:textSize="15dp"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/fbPicPlacing"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_below="@+id/imageView"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/fbdefaultpic"
+                    app:border_color="#000000"
+                    app:border_width="1dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/suorce"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/source"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="10dp"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:hint="@string/source"
+                        android:background="@color/edittext_location_color"
+                        android:padding="16dp"
+                        android:singleLine="true"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/clearSource"
+                        android:layout_width="wrap_content"
+                        android:visibility="gone"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/ic_clear_black_24dp"
+                        />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/destination"/>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/destination"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="10dp"
+
+                        android:editable="false"
+                        android:focusable="false"
+                        android:background="@color/edittext_location_color"
+                        android:hint="@string/dest"
+                        android:padding="16dp"
+                        android:singleLine="true"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/clearDest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/ic_clear_black_24dp"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/calender"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    >
+
+                    <EditText
+                        android:id="@+id/ride_date"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="10dp"
+
+                        android:editable="false"
+                        android:focusable="false"
+                        android:hint="Departure Date"
+                        android:paddingBottom="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:singleLine="true"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/driverStartTime"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:hint="Time"
+                        android:paddingBottom="16dp"
+                        android:singleLine="true"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+             <android.support.v7.widget.RecyclerView
+                  android:id="@+id/rides_recycle"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentLeft="true"
+                  android:layout_alignParentStart="true"
+                  android:layout_below="@+id/rideList"
+                  android:padding="3dp"
+                  android:visibility="gone" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/submit"
+
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp"
+        >
+
+        <CheckBox
+            android:id="@+id/termsandcondition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/textGreen"
+            />
+
+        <TextView
+            android:id="@+id/termsandconditiontext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" I accept the Terms and conditions"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+
+    <!-- <CheckBox
+         android:id="@+id/termsandcondition"
+         android:layout_width="wrap_content"
+         android:text="I accept the Terms and conditions"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/submit"
+ android:visibility="gone"
+         android:layout_marginBottom="10dp"
+         android:layout_marginLeft="16dp"
+         />
+
+     <TextView
+         android:id="@+id/termsandconditiontext"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/submit"
+         android:layout_marginBottom="20dp"
+         android:layout_marginLeft="5dp"
+ android:visibility="gone"
+         android:layout_toRightOf="@+id/termsandcondition"
+         android:text="I accept the Terms and conditions" />
+ -->
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black"
+        android:text="FIND NOW"
+        android:textColor="@color/textGreen"
+        android:textStyle="bold" />
+
+</LinearLayout>

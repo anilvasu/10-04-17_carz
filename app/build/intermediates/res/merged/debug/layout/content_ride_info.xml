@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.moyo.carzrideon.Activitites.RideInfoActivity"
+    tools:showIn="@layout/activity_ride_info">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="@android:color/white"
+        android:padding="16dp"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/leftarrow"
+            android:id="@+id/left_arrow"
+            android:layout_alignParentLeft="true"
+            />
+
+        <com.moyo.carzrideon.Views.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:gravity="center"
+            android:id="@+id/title"
+            android:layout_marginRight="50dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/toolBarTextColor"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/secondlinearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearTop"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/black_border_white"
+                android:paddingRight="10dp">
+
+
+                <com.moyo.carzrideon.Views.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Ride is posted by"
+                    android:padding="16dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="22sp"
+
+                />
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <de.hdodenhof.circleimageview.CircleImageView
+                       android:id="@+id/fbPicRideChoser"
+                       android:layout_width="70dp"
+                       android:layout_height="80dp"
+                        android:layout_marginLeft="16dp"
+                       android:layout_marginTop="4dp"
+                       android:layout_weight="1"
+                       android:src="@drawable/fbdefaultpic"
+                       app:border_color="#000000"
+                       app:border_width="1dp" />
+                   <com.moyo.carzrideon.Views.CustomTextView
+                       android:id="@+id/passengerName"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:paddingBottom="5dp"
+                       android:text="Name"
+                       android:layout_marginLeft="10dp"
+                       android:layout_marginTop="10dp"
+                       android:textColor="@android:color/black"
+                       android:layout_toRightOf="@+id/fbPicRideChoser"
+                       android:textSize="15dp"
+                       android:textStyle="bold" />
+
+                   <com.moyo.carzrideon.Views.CustomTextView
+                       android:id="@+id/passengerAge"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:paddingBottom="5dp"
+                       android:text="Age"
+                       android:textSize="15dp"
+                       android:layout_below="@+id/passengerName"
+                       android:layout_toRightOf="@+id/passengerGender"
+                       android:layout_marginLeft="10dp"
+                       android:textStyle="bold" />
+
+                   <com.moyo.carzrideon.Views.CustomTextView
+                       android:id="@+id/passengerGender"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:paddingBottom="3dp"
+                       android:text="Gender"
+                       android:layout_below="@+id/passengerName"
+                       android:layout_toRightOf="@+id/fbPicRideChoser"
+                       android:layout_marginLeft="10dp"
+                       android:textSize="15dp"
+                       android:textStyle="bold" />
+
+                   <com.moyo.carzrideon.Views.CustomTextView
+                       android:id="@+id/passengerMobile"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:paddingBottom="3dp"
+                       android:text="Mobile"
+                       android:textSize="15dp"
+                       android:layout_below="@+id/passengerAge"
+                       android:layout_toRightOf="@+id/fbPicRideChoser"
+                       android:layout_marginLeft="10dp"
+                       android:textStyle="bold" />
+               </RelativeLayout>
+
+
+
+
+                <com.moyo.carzrideon.Views.CustomTextView
+                    android:id="@+id/passengerStartTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:drawableLeft="@drawable/calender"
+                    android:drawablePadding="8dp"
+                    android:gravity="left"
+                    android:text="You posted a ride on "
+                    android:textColor="@color/textview_black"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/source_cicle"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/source_circle" />
+
+                        <com.moyo.carzrideon.Views.CustomTextView
+                            android:id="@+id/passengerSource"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/source_cicle"
+                            android:gravity="left"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:text="From"
+                            android:textColor="@color/textview_black"
+                            android:textSize="16sp" />
+
+
+                        <ImageView
+                            android:id="@+id/down_arrow"
+                            android:layout_width="20dp"
+                            android:layout_height="15dp"
+                            android:layout_below="@+id/passengerSource"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/down_arrow" />
+
+
+                        <ImageView
+                            android:id="@+id/destination_circle"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_below="@+id/down_arrow"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/destination_circle" />
+
+                        <com.moyo.carzrideon.Views.CustomTextView
+                            android:id="@+id/passengerDestination"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/down_arrow"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@+id/destination_circle"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="5dp"
+                            android:singleLine="true"
+                            android:text="To"
+                            android:textColor="@color/textview_black"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="10dp"
+                        android:background="#bdbdbd" />
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/carmodel_icon"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="16dp"
+                            android:src="@drawable/car" />
+
+                        <com.moyo.carzrideon.Views.CustomTextView
+                            android:id="@+id/vehicleModel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/carmodel_icon"
+                            android:gravity="left"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:text="Car Model"
+                            android:textColor="@color/textview_black"
+                            android:textSize="16sp" />
+
+
+                        <ImageView
+                            android:id="@+id/down_arrow1"
+                            android:layout_width="20dp"
+                            android:layout_height="15dp"
+                            android:layout_below="@+id/vehicleModel"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/down_arrow"
+                            android:visibility="invisible" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/down_arrow1"
+                            android:weightSum="2">
+
+                            <com.moyo.carzrideon.Views.CustomTextView
+                                android:id="@+id/passengerSeats"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:paddingLeft="16dp"
+                                android:paddingRight="5dp"
+                                android:singleLine="true"
+                                android:text="To"
+                                android:textColor="#f37272"
+                                android:textSize="16sp" />
+
+
+                            <ImageView
+                                android:id="@+id/rupee_icon"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_marginTop="10dp"
+
+                                android:src="@drawable/price"
+
+                                />
+
+                            <com.moyo.carzrideon.Views.CustomTextView
+                                android:id="@+id/passengerAmount"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="5dp"
+                                android:text="To"
+                                android:textColor="@color/textview_black"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/message"
+                    android:gravity="center"
+
+                    android:layout_marginTop="10dp"
+
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/secondlinearlayout"
+                android:layout_marginTop="10dp"
+                android:scrollbars="vertical" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:background="@drawable/carzrideon_background"
+    tools:context=".Activitites.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparentblack">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/title"
+            android:src="@drawable/logo"
+            android:layout_marginTop="90dp"
+            android:layout_weight="1"
+            android:id="@+id/circleView"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ti"
+            android:text="Carz Ride On"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textSize="38.3sp"
+
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:layout_below="@+id/title"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:id="@+id/message"
+            android:textSize="17sp"
+            android:layout_marginTop="300dp"
+            android:text="Share Ride - Share the Joy"/>
+
+
+        <com.facebook.login.widget.LoginButton xmlns:facebook="http://schemas.android.com/apk/res-auto"
+
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="48dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:textSize="25sp"
+
+            facebook:com_facebook_login_text="Login with Facebook"
+            facebook:com_facebook_logout_text="Logout Facebook" />
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

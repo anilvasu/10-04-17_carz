@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\g.anil\\AndroidStudioProjects\\03-04-17_carz\\app\\build\\intermediates\\res\\merged\\debug\\menu\\crop_image_menu.xml",
+        "source": "C:\\Users\\g.anil\\AndroidStudioProjects\\03-04-17_carz\\app\\build\\intermediates\\exploded-aar\\com.theartofdev.edmodo\\android-image-cropper\\2.3.1\\res\\menu\\crop_image_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\g.anil\\AndroidStudioProjects\\03-04-17_carz\\app\\build\\intermediates\\res\\merged\\debug\\menu\\navigationddrawermenu.xml",
+        "source": "C:\\Users\\g.anil\\AndroidStudioProjects\\03-04-17_carz\\app\\src\\main\\res\\menu\\navigationddrawermenu.xml"
+    },
+    {
+        "merged": "C:\\Users\\g.anil\\AndroidStudioProjects\\10-04-17_carz\\app\\build\\intermediates\\res\\merged\\debug\\menu\\navigationddrawermenu.xml",
+        "source": "C:\\Users\\g.anil\\AndroidStudioProjects\\10-04-17_carz\\app\\src\\main\\res\\menu\\navigationddrawermenu.xml"
+    },
+    {
+        "merged": "C:\\Users\\g.anil\\AndroidStudioProjects\\10-04-17_carz\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_searchandplace.xml",
+        "source": "C:\\Users\\g.anil\\AndroidStudioProjects\\10-04-17_carz\\app\\src\\main\\res\\menu\\menu_searchandplace.xml"
+    },
+    {
+        "merged": "C:\\Users\\g.anil\\AndroidStudioProjects\\03-04-17_carz\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_searchandplace.xml",
+        "source": "C:\\Users\\g.anil\\AndroidStudioProjects\\03-04-17_carz\\app\\src\\main\\res\\menu\\menu_searchandplace.xml"
+    },
+    {
+        "merged": "C:\\Users\\g.anil\\AndroidStudioProjects\\10-04-17_carz\\app\\build\\intermediates\\res\\merged\\debug\\menu\\crop_image_menu.xml",
+        "source": "C:\\Users\\g.anil\\AndroidStudioProjects\\10-04-17_carz\\app\\build\\intermediates\\exploded-aar\\com.theartofdev.edmodo\\android-image-cropper\\2.3.1\\res\\menu\\crop_image_menu.xml"
+    }
+]

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">301187883692-sdsson8ie4mhb9e6iald1dvk3vn80emq.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://rideon-edd12.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">301187883692</string>
+    <string name="google_api_key" translatable="false">AIzaSyC99LPurRk8flAxIEFUFXQyhmKlbDL3Bk0</string>
+    <string name="google_app_id" translatable="false">1:301187883692:android:33d088c48a45b773</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC99LPurRk8flAxIEFUFXQyhmKlbDL3Bk0</string>
+    <string name="google_storage_bucket" translatable="false">rideon-edd12.appspot.com</string>
+</resources>

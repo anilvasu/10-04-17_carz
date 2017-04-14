@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Select an option"
+        android:padding="16dp"
+        android:id="@+id/title"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Take a picture"
+        android:id="@+id/camera"
+        android:layout_below="@+id/title"
+        />
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="0.8dp"
+        android:layout_below="@+id/camera"
+        android:layout_marginTop="15dp"
+        android:background="#c0c0c0"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Choose from gallery"
+        android:padding="16dp"
+        android:id="@+id/gallery"
+        android:layout_below="@+id/view"
+        />
+
+
+</RelativeLayout>

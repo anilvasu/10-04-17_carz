@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:theme="@android:style/Theme.Translucent.NoTitleBar"
+    android:layout_height="match_parent"
+    android:background="@drawable/carzrideon_background" >
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="16dp"
+
+
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:text="Carz Ride On"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="38.3sp"
+        android:layout_below="@+id/imgLogo"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:layout_below="@+id/title"
+        android:id="@+id/tagline"
+        android:textStyle="bold|italic"
+        android:textColor="@android:color/white"
+        android:gravity="center_horizontal"
+
+        android:text="Share Ride - Share the Joy" />
+
+</RelativeLayout>

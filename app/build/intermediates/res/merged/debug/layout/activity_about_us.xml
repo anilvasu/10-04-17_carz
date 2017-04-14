@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about_us"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.moyo.carzrideon.Activitites.ContactUsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/edittext_location_color">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/title"
+            android:src="@drawable/logo"
+            android:layout_marginTop="105dp"
+            android:layout_weight="1"
+            android:id="@+id/circleView"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ti"
+            android:text="Carz Ride On"
+            android:textStyle="bold"
+            android:layout_marginLeft="95dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/black"
+            android:textSize="30.3sp"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:layout_below="@+id/title"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:id="@+id/message"
+            android:textSize="17sp"
+            android:layout_marginTop="280dp"
+            android:text="Version 6.25.101"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:id="@+id/text2"
+            android:textSize="18sp"
+            android:layout_marginTop="320dp"
+            android:text="Orem ipsum dolor sit amet,consectetur adipiscing elit.integer sodales purus sed sapien ultrices,sit amit consectetur nunc sodales,sed at porttitor erat.Etium auctor pretium libero auctor scelerisque.morbi scelerisque id est a laoreet "/>
+    </RelativeLayout>
+
+
+        <com.moyo.carzrideon.Views.CustomTextView
+            android:id="@+id/termsandconditiontext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms and conditions"
+            android:textColor="@android:color/black"
+            android:clickable="true"
+            android:layout_marginTop="-40dp"
+            android:layout_marginLeft="120dp"
+          />
+
+
+
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/black_border_white"
+    android:orientation="vertical"
+    android:padding="6dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/riderProfilePic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="10dp"
+
+            />
+
+        <com.moyo.carzrideon.Views.CustomTextView
+            android:id="@+id/riderName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/riderProfilePic"
+            android:paddingTop="10dp"
+            android:text="Nikhil Ramavath"
+            android:textColor="@android:color/black" />
+
+
+        <com.moyo.carzrideon.Views.CustomTextView
+            android:id="@+id/riderGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/riderName"
+            android:layout_toRightOf="@+id/riderProfilePic"
+            android:text="Male/22" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/calender"
+        android:drawablePadding="16dp"
+        android:gravity="left"
+        android:paddingLeft="16dp"
+        android:text="15 Mar 2017 , 10:40 AM "
+        android:textColor="@android:color/black" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/source_cicle"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/source_circle" />
+
+        <TextView
+            android:id="@+id/dSource"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/source_cicle"
+            android:gravity="left"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:text="From"
+            android:textColor="@color/textview_black"
+            android:textSize="16sp" />
+
+
+        <ImageView
+            android:id="@+id/down_arrow"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/dSource"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/down_arrow" />
+
+
+        <ImageView
+            android:id="@+id/destination_circle"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/down_arrow"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/destination_circle" />
+
+        <TextView
+            android:id="@+id/dDestination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/down_arrow"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/destination_circle"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:text="To"
+            android:textColor="@color/textview_black"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="left"
+        android:textColor="@android:color/holo_green_dark"
+        android:padding="16dp"
+        android:text="You took a ride with" />
+
+
+</LinearLayout>

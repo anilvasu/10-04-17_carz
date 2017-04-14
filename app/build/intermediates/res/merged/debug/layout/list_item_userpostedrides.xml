@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/black_border_white"
+    android:orientation="vertical"
+
+    android:padding="6dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:drawableLeft="@drawable/calender"
+        android:drawablePadding="8dp"
+        android:gravity="left"
+        android:text="You posted a ride on "
+        android:textColor="@color/textview_black"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/source_cicle"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/source_circle" />
+
+            <TextView
+                android:id="@+id/dSource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/source_cicle"
+                android:gravity="left"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="From"
+                android:textColor="@color/textview_black"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/down_arrow"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:layout_below="@+id/dSource"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/down_arrow" />
+
+
+            <ImageView
+                android:id="@+id/destination_circle"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/down_arrow"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/destination_circle" />
+
+            <TextView
+                android:id="@+id/dDestination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/down_arrow"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/destination_circle"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:text="To"
+                android:textColor="@color/textview_black"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dp"
+            android:background="#bdbdbd" />
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/carmodel_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/car" />
+
+            <TextView
+                android:id="@+id/carmodel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/carmodel_icon"
+                android:gravity="left"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="Car Model"
+                android:textColor="@color/textview_black"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/down_arrow1"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:layout_below="@+id/carmodel"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/down_arrow"
+                android:visibility="invisible" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/down_arrow1"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/seatsavailable"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="5dp"
+                    android:singleLine="true"
+                    android:text="To"
+                    android:textColor="#f37272"
+                    android:textSize="16sp" />
+
+
+                <ImageView
+                    android:id="@+id/rupee_icon"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/price"
+
+                    />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:text="To"
+                    android:textColor="@color/textview_black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/dPic"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingRight="5dp"
+            android:text="to"
+            android:textStyle="bold|italic" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

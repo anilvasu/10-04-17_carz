@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Activitites.PlacingRide">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/left_arrow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/leftarrow" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/left_arrow"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/source_cicle"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/source_circle" />
+
+            <com.moyo.carzrideon.Views.CustomTextView
+                android:id="@+id/passengerSource"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/source_cicle"
+                android:gravity="left"
+                android:paddingRight="10dp"
+
+                android:singleLine="true"
+                android:text="From"
+                android:textColor="@color/textview_black"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/down_arrow"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:layout_below="@+id/passengerSource"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/down_arrow" />
+
+
+            <ImageView
+                android:id="@+id/destination_circle"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/down_arrow"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/destination_circle" />
+
+            <com.moyo.carzrideon.Views.CustomTextView
+                android:id="@+id/passengerDestination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/down_arrow"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/destination_circle"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:text="To"
+                android:textColor="@color/textview_black"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout"
+        android:layout_below="@+id/toolbar">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearTop"
+
+               >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/fbPicRideChoser"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:src="@drawable/fbdefaultpic"
+                    app:border_color="#000000"
+                    app:border_width="1dp" />
+
+                <com.moyo.carzrideon.Views.CustomTextView
+                    android:id="@+id/passengerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/fbPicRideChoser"
+                    android:text="Name"
+                    android:textColor="@color/colorPrimary" />
+
+
+                <LinearLayout
+                    android:id="@+id/carLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/passengerName"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/fbPicRideChoser">
+
+                    <ImageView
+                        android:id="@+id/carmodel_icon"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/car" />
+
+                    <TextView
+                        android:id="@+id/vehicleModel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:drawablePadding="10dp"
+
+                        android:text="asdasds"
+
+
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/dateLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/carLayout"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/fbPicRideChoser">
+
+                    <ImageView
+
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/calender" />
+
+                    <TextView
+                        android:id="@+id/passengerStartTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:drawablePadding="10dp"
+                        android:text="asdasds"
+
+
+                        />
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/carLayout"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/dPic"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/dSource"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/to"
+                        android:gravity="left"
+
+                        android:paddingRight="10dp"
+                        android:text="From"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/to"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:paddingRight="5dp"
+                        android:text="to"
+                        android:textStyle="bold|italic"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/dDestination"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/to"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:text="To"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold|italic"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#F4F4F4"
+                android:padding="10dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/passengerSeats"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="seats"
+                    android:textColor="#f37272" />
+
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+
+                    android:background="#bdbdbd" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/rupee_icon"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toLeftOf="@+id/passengerAmount"
+                        android:src="@drawable/price"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/passengerAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="price"
+                        android:textColor="@color/colorPrimary" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/carmodel"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/dPic">
+
+
+                <EditText
+                    android:id="@+id/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/black_border_white"
+                    android:gravity="top|left"
+                    android:hint="Message"
+
+                    android:inputType="textMultiLine|textNoSuggestions"
+                    android:lines="8"
+                    android:maxLines="10"
+                    android:minLines="4"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:scrollbars="vertical"
+
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/accept"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="5dp"
+
+        android:layout_marginTop="16dp">
+
+        <CheckBox
+            android:id="@+id/termsandcondition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/textGreen" />
+
+        <com.moyo.carzrideon.Views.CustomTextView
+            android:id="@+id/termsandconditiontext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text=" I Agree With Terms and conditions" />
+
+    </LinearLayout>
+
+
+    <!--   <CheckBox
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="I accept the Terms and conditions"
+           android:layout_marginTop="16dp"
+           android:layout_marginBottom="16dp"
+           android:layout_marginLeft="5dp"
+
+           android:layout_above="@+id/accept"
+           android:id="@+id/termsandcondition"
+           />
+       <com.moyo.carzrideon.Views.CustomTextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="I accept the Terms and conditions"
+           android:layout_marginTop="20dp"
+           android:visibility="gone"
+           android:layout_marginLeft="5dp"
+          android:layout_above="@+id/accept"
+           android:layout_toRightOf="@+id/termsandcondition"
+           android:id="@+id/termsandconditiontext"/>-->
+
+    <Button
+        android:id="@+id/accept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black"
+        android:text="Send request to join"
+        android:textSize="20sp"
+        android:textColor="@color/textGreen" />
+
+</RelativeLayout>

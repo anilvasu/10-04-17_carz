@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Carz Ride On</string>
+    <string name="facebook_app_id">675074319320777</string>
+    <string name="source">Enter your source point</string>
+    <string name="dest">Enter your destination point</string>
+    <string name="someText">Some text</string>
+    <string name="search">Take Ride</string>
+    <string name="post">Offer Ride</string>
+
+    <string name="lbl_you_are_at">YOU ARE AT</string>
+    <string name="btn_get_location">GET MY LOCATION</string>
+    <string name="btn_start_location_updates">START LOCATION UPDATES</string>
+    <string name="btn_stop_location_updates">STOP LOCATION UPDATES</string>
+    <string name="title_activity_alerts"> Ride Info</string>
+    <string name="title_activity_refrences_actvity">Mutual Friends</string>
+    <string name="title_activity_ride_info">Ride Info</string>
+
+
+    <!-- AdMob ad unit IDs -->
+    <string name="banner_home_footer">ca-app-pub-6283389635676693/9468881561</string>
+    <string name="interstitial_full_screen">ca-app-pub-0664570763252260/1769900428</string>
+
+   <!-- <string name="banner_home_footer">ca-app-pub-8185238492097743/3151324919</string>
+    <string name="interstitial_full_screen">ca-app-pub-8185238492097743/4628058119</string>-->
+
+</resources>

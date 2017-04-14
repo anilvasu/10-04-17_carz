@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainRelative"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/black_border_white"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/dPic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:src="@drawable/fbdefaultpic"
+            app:border_color="#000000"
+            app:border_width="1dp" />
+
+        <com.moyo.carzrideon.Views.CustomTextView
+            android:id="@+id/dName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/dPic"
+            android:text="Name"
+            android:textColor="@color/colorPrimary" />
+
+
+        <LinearLayout
+            android:id="@+id/carLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dName"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/dPic">
+
+            <ImageView
+                android:id="@+id/carmodel_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/car" />
+
+            <TextView
+                android:id="@+id/carmodel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:drawablePadding="10dp"
+
+                android:text="asdasds"
+
+
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/dateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/carLayout"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/dPic">
+
+            <ImageView
+
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/calender" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:drawablePadding="10dp"
+                android:text="asdasds"
+
+
+                />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/carLayout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/dPic"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/dSource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/to"
+                android:gravity="left"
+
+                android:paddingRight="10dp"
+                android:text="From"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingRight="5dp"
+                android:text="to"
+                android:textStyle="bold|italic"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/dDestination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/to"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:text="To"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold|italic"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="#F4F4F4"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/seatsavailable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="seats"
+            android:textColor="#f37272" />
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+
+            android:background="#bdbdbd" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/rupee_icon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/price"
+                android:src="@drawable/price"
+
+                />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="price"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <!--<View
+        android:background="@color/com_facebook_button_background_color_disabled"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/mainLinear"
+        android:layout_height="2dp"/>-->
+
+</LinearLayout>

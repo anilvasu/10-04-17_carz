@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.moyo.carzrideon.Views.CustomTextView
+                android:id="@+id/rides"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/rides"
+                android:drawablePadding="16dp"
+                android:padding="26dp"
+                android:text="Rides"
+                android:textColor="@color/textview_black"
+                android:textSize="20sp" />
+
+
+            <com.moyo.carzrideon.Views.CustomTextView
+                android:id="@+id/refernces"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/references"
+                android:drawablePadding="16dp"
+                android:padding="26dp"
+                android:text="Refernces"
+                android:textColor="@color/textview_black"
+                android:textSize="20sp" />
+
+            <com.moyo.carzrideon.Views.CustomTextView
+                android:id="@+id/refernces"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/notification"
+                android:drawablePadding="16dp"
+                android:padding="26dp"
+                android:text="Notification"
+                android:textColor="@color/textview_black"
+                android:textSize="20sp" />
+
+
+            <com.moyo.carzrideon.Views.CustomTextView
+                android:id="@+id/help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/help"
+                android:drawablePadding="16dp"
+                android:padding="26dp"
+                android:text="Help/Contact Us"
+                android:textColor="@color/textview_black"
+                android:textSize="20sp" />
+
+            <com.moyo.carzrideon.Views.CustomTextView
+                android:id="@+id/invite_frieds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/invite"
+                android:drawablePadding="16dp"
+                android:padding="26dp"
+                android:text="Invite Friends"
+                android:textColor="@color/textview_black"
+                android:textSize="20sp" />
+
+            <com.moyo.carzrideon.Views.CustomTextView
+                android:id="@+id/aboutus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/about"
+                android:drawablePadding="16dp"
+                android:padding="26dp"
+                android:text="About Us"
+                android:textColor="@color/textview_black"
+                android:textSize="20sp" />
+
+            <com.moyo.carzrideon.Views.CustomTextView
+                android:id="@+id/rateus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/rate_us"
+                android:drawablePadding="16dp"
+                android:padding="26dp"
+                android:text="Rate us"
+                android:textColor="@color/textview_black"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="16dp"
+                android:background="@android:color/black"
+                android:text="Logout"
+                android:textColor="@color/textGreen"
+
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

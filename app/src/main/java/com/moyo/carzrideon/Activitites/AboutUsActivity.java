@@ -24,7 +24,7 @@ public class AboutUsActivity extends Activity {
 
             setContentView(R.layout.activity_about_us);
 
-
+            // This is for testing
             /*
                         toolbar = (Toolbar) findViewById(R.id.toolbar);
                         setSupportActionBar(toolbar);
